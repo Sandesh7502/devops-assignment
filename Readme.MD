@@ -53,3 +53,5 @@ Please write your dockerfile here
 ```
 
 This `Dockerfile` will copy the `index.html` file into the Nginx server's default HTML directory and expose port 80 for external access.
+
+7. Also Host it in Minikube and expose it.
