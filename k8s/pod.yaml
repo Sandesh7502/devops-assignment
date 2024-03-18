@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ilovedevops
+spec:
+  containers:
+  - name: ilovedevops
+    image: sandesh2057/ilovedevops:v1
+    ports:
+    - containerPort: 80
