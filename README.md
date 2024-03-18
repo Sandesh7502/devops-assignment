@@ -1,3 +1,8 @@
+# I Love DevOps
+
+This project demonstrates a simple DevOps pipeline using GitHub Actions, Docker, and Minikube. 
+
+
 
 ## Cloning the Repository
 
