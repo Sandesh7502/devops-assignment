@@ -25,16 +25,24 @@ Write a Dockerfile based on the Nginx image.
 Build the Docker image:
 
 ```bash
-  docker build -t ilovedevops .
+  docker build -t sandesh2057/ilovedevops:v1  .
 
 ```
 
 ```bash
- docker run -d -p 8088:80 ilovedevops
+ docker run -d -p 8088:80 sandesh2057/ilovedevops:v1
 
 
 ```
 Access the application at http://localhost:8088.
+
+## Push Docker Image
+
+After building the Docker image, it pushes the image to DockerHub.
+
+```bash
+  docker push sandesh2057/ilovedevops:v1
+```
 
 
 # Setting up Minikube and Kubernetes
@@ -127,3 +135,6 @@ Access the service endpoint, typically via Minikube's IP and the NodePort:   cur
 ```bash
 curl -L 192.168.49.2:30007
 ```
+## CI/CD Pipeline with GitHub Actions
+The CI/CD pipeline is defined in the .github/workflows/main.yml file. It triggers on every push to the main branch.
+
